@@ -57,6 +57,7 @@ export default {
         .then(() => {
           this.$swal('¡Atención!', `Se ha eliminado el post ${id}`, 'info');
           this.$store.dispatch("getPost");
+          console.log(`Se ha eliminado el post ${id}`);
         });
     },
   },

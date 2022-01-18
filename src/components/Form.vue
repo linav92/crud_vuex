@@ -28,6 +28,7 @@ export default {
           .then(() => {
             this.$swal('¡Felicidades!', 'Se ha creado un nuevo post', 'success');
             this.$store.dispatch("getPost");
+            console.log(`Se ha creado un nuevo post titulado ${this.title}`);
             this.title = "";
             this.content = "";
           });
